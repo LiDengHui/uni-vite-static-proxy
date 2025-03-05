@@ -1,0 +1,50 @@
+{
+    "name": "@dhlx/uni-vite-static-proxy",
+    "private": false,
+    "version": "0.0.4",
+    "type": "module",
+    "files": [
+        "dist",
+        "index.d.ts"
+    ],
+    "main": "./dist/index.umd.cjs",
+    "module": "./dist/index.js",
+    "types": "./dist/lib/main.d.ts",
+    "exports": {
+        "types": "./dist/lib/main.d.ts",
+        "import": "./dist/index.js",
+        "require": "./dist/index.umd.cjs"
+    },
+    "scripts": {
+        "dev": "vite -c vite-test.config.ts",
+        "build": "tsc && vite build",
+        "test": "ava"
+    },
+    "devDependencies": {
+        "@types/express": "^5.0.0",
+        "ava": "^6.1.3",
+        "prettier": "^3.3.3",
+        "typescript": "^5.4.5",
+        "vite": "^5.2.10"
+    },
+    "dependencies": {
+        "@dhlx/delay": "^0.0.5",
+        "vite-plugin-dts": "^4.2.2"
+    },
+    "peerDependencies": {
+        "express": "^4.21.2",
+        "http-proxy-middleware": "^3.0.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LiDengHui/uni-vite-static-proxy.git"
+    },
+    "description": "uni-app Enable local static file server with proxy forwarding",
+    "keywords": [
+        "uni-app",
+        "vite",
+        "static",
+        "proxy",
+        "service"
+    ]
+}
