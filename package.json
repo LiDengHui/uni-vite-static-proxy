@@ -1,19 +1,18 @@
 {
     "name": "@dhlx/uni-vite-static-proxy",
     "private": false,
-    "version": "0.0.4",
+    "version": "0.0.6",
     "type": "module",
     "files": [
-        "dist",
-        "index.d.ts"
+        "dist"
     ],
-    "main": "./dist/index.umd.cjs",
-    "module": "./dist/index.js",
-    "types": "./dist/lib/main.d.ts",
+    "main": "./dist/main.cjs",
+    "module": "./dist/main.js",
+    "types": "./dist/main.d.ts",
     "exports": {
-        "types": "./dist/lib/main.d.ts",
-        "import": "./dist/index.js",
-        "require": "./dist/index.umd.cjs"
+        "types": "./dist/main.d.ts",
+        "import": "./dist/main.js",
+        "require": "./dist/main.cjs"
     },
     "scripts": {
         "dev": "vite -c vite-test.config.ts",
